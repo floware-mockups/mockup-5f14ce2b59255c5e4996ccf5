@@ -1,0 +1,449 @@
+{
+  "title": "Gestione prenotazioni sale",
+  "description": "Prototipo per consultare il calendario settimanale delle sale di un ufficio comunale e registrare o filtrare le prenotazioni, con dati interamente inventati.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "dashboard",
+      "title": "Panoramica settimanale",
+      "description": "Riepilogo delle prenotazioni e degli spazi disponibili nella settimana selezionata.",
+      "metrics": [
+        {
+          "label": "Prenotazioni settimana",
+          "value": "18"
+        },
+        {
+          "label": "Sale disponibili",
+          "value": "6"
+        },
+        {
+          "label": "Ore prenotate",
+          "value": "42"
+        },
+        {
+          "label": "Richieste da confermare",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Sala",
+        "Giorno",
+        "Orario",
+        "Richiedente",
+        "Organizzazione",
+        "Partecipanti",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lumo",
+          "Lunedì",
+          "09:00–10:00",
+          "Vela",
+          "Ufficio Quercia",
+          "8",
+          "Confermata"
+        ],
+        [
+          "Nubi",
+          "Lunedì",
+          "11:00–12:30",
+          "Timo",
+          "Gruppo Riva",
+          "12",
+          "Confermata"
+        ],
+        [
+          "Brina",
+          "Martedì",
+          "10:00–11:00",
+          "Mira",
+          "Servizi Alba",
+          "6",
+          "Da confermare"
+        ],
+        [
+          "Cobalto",
+          "Mercoledì",
+          "14:00–15:00",
+          "Sole",
+          "Ufficio Smeraldo",
+          "10",
+          "Confermata"
+        ],
+        [
+          "Loto",
+          "Giovedì",
+          "09:30–11:00",
+          "Duna",
+          "Laboratorio Orsa",
+          "7",
+          "Da confermare"
+        ],
+        [
+          "Vento",
+          "Venerdì",
+          "13:00–14:00",
+          "Edera",
+          "Coordinamento Pino",
+          "5",
+          "Confermata"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "calendario-settimanale",
+      "title": "Calendario settimanale",
+      "description": "Vista tabellare filtrabile delle prenotazioni, ordinata per giorno e orario.",
+      "metrics": [
+        {
+          "label": "Giorni visualizzati",
+          "value": "5"
+        },
+        {
+          "label": "Spazi in uso",
+          "value": "6"
+        }
+      ],
+      "columns": [
+        "Sala",
+        "Giorno",
+        "Orario",
+        "Richiedente",
+        "Organizzazione",
+        "Partecipanti",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lumo",
+          "Lunedì",
+          "09:00–10:00",
+          "Vela",
+          "Ufficio Quercia",
+          "8",
+          "Confermata"
+        ],
+        [
+          "Nubi",
+          "Lunedì",
+          "11:00–12:30",
+          "Timo",
+          "Gruppo Riva",
+          "12",
+          "Confermata"
+        ],
+        [
+          "Brina",
+          "Lunedì",
+          "15:00–16:00",
+          "Mira",
+          "Servizi Alba",
+          "6",
+          "Confermata"
+        ],
+        [
+          "Cobalto",
+          "Martedì",
+          "09:00–10:30",
+          "Sole",
+          "Ufficio Smeraldo",
+          "10",
+          "Confermata"
+        ],
+        [
+          "Loto",
+          "Martedì",
+          "13:00–14:00",
+          "Duna",
+          "Laboratorio Orsa",
+          "7",
+          "Da confermare"
+        ],
+        [
+          "Vento",
+          "Martedì",
+          "15:00–16:00",
+          "Edera",
+          "Coordinamento Pino",
+          "5",
+          "Confermata"
+        ],
+        [
+          "Lumo",
+          "Mercoledì",
+          "10:00–11:00",
+          "Timo",
+          "Gruppo Riva",
+          "9",
+          "Confermata"
+        ],
+        [
+          "Nubi",
+          "Mercoledì",
+          "14:00–15:00",
+          "Sole",
+          "Ufficio Smeraldo",
+          "10",
+          "Confermata"
+        ],
+        [
+          "Brina",
+          "Mercoledì",
+          "16:00–17:00",
+          "Vela",
+          "Ufficio Quercia",
+          "4",
+          "Annullata"
+        ],
+        [
+          "Cobalto",
+          "Giovedì",
+          "09:00–10:00",
+          "Mira",
+          "Servizi Alba",
+          "6",
+          "Confermata"
+        ],
+        [
+          "Loto",
+          "Giovedì",
+          "09:30–11:00",
+          "Duna",
+          "Laboratorio Orsa",
+          "7",
+          "Da confermare"
+        ],
+        [
+          "Vento",
+          "Giovedì",
+          "14:00–15:30",
+          "Edera",
+          "Coordinamento Pino",
+          "5",
+          "Confermata"
+        ],
+        [
+          "Lumo",
+          "Venerdì",
+          "09:00–10:00",
+          "Sole",
+          "Ufficio Smeraldo",
+          "8",
+          "Confermata"
+        ],
+        [
+          "Nubi",
+          "Venerdì",
+          "11:00–12:00",
+          "Vela",
+          "Ufficio Quercia",
+          "6",
+          "Confermata"
+        ],
+        [
+          "Brina",
+          "Venerdì",
+          "13:00–14:00",
+          "Edera",
+          "Coordinamento Pino",
+          "5",
+          "Confermata"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "nuova-prenotazione",
+      "title": "Nuova prenotazione",
+      "description": "Inserisci una richiesta per una sala; la disponibilità viene verificata prima della conferma.",
+      "metrics": [],
+      "columns": [
+        "Sala",
+        "Giorno",
+        "Orario",
+        "Richiedente",
+        "Organizzazione",
+        "Partecipanti",
+        "Stato"
+      ],
+      "rows": [],
+      "form": [
+        "Sala",
+        "Giorno",
+        "Orario",
+        "Richiedente",
+        "Organizzazione",
+        "Partecipanti",
+        "Stato"
+      ]
+    },
+    {
+      "id": "gestione-prenotazioni",
+      "title": "Gestione prenotazioni",
+      "description": "Filtra le richieste e consulta o aggiorna lo stato delle prenotazioni.",
+      "metrics": [
+        {
+          "label": "Prenotazioni registrate",
+          "value": "18"
+        },
+        {
+          "label": "In attesa",
+          "value": "3"
+        },
+        {
+          "label": "Annullate",
+          "value": "2"
+        }
+      ],
+      "columns": [
+        "Sala",
+        "Giorno",
+        "Orario",
+        "Richiedente",
+        "Organizzazione",
+        "Partecipanti",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Lumo",
+          "Lunedì",
+          "09:00–10:00",
+          "Vela",
+          "Ufficio Quercia",
+          "8",
+          "Confermata"
+        ],
+        [
+          "Nubi",
+          "Lunedì",
+          "11:00–12:30",
+          "Timo",
+          "Gruppo Riva",
+          "12",
+          "Confermata"
+        ],
+        [
+          "Brina",
+          "Martedì",
+          "10:00–11:00",
+          "Mira",
+          "Servizi Alba",
+          "6",
+          "Da confermare"
+        ],
+        [
+          "Cobalto",
+          "Martedì",
+          "09:00–10:30",
+          "Sole",
+          "Ufficio Smeraldo",
+          "10",
+          "Confermata"
+        ],
+        [
+          "Loto",
+          "Martedì",
+          "13:00–14:00",
+          "Duna",
+          "Laboratorio Orsa",
+          "7",
+          "Da confermare"
+        ],
+        [
+          "Vento",
+          "Mercoledì",
+          "15:00–16:00",
+          "Edera",
+          "Coordinamento Pino",
+          "5",
+          "Confermata"
+        ],
+        [
+          "Lumo",
+          "Mercoledì",
+          "10:00–11:00",
+          "Timo",
+          "Gruppo Riva",
+          "9",
+          "Confermata"
+        ],
+        [
+          "Nubi",
+          "Mercoledì",
+          "14:00–15:00",
+          "Sole",
+          "Ufficio Smeraldo",
+          "10",
+          "Confermata"
+        ],
+        [
+          "Brina",
+          "Mercoledì",
+          "16:00–17:00",
+          "Vela",
+          "Ufficio Quercia",
+          "4",
+          "Annullata"
+        ],
+        [
+          "Cobalto",
+          "Giovedì",
+          "09:00–10:00",
+          "Mira",
+          "Servizi Alba",
+          "6",
+          "Confermata"
+        ],
+        [
+          "Loto",
+          "Giovedì",
+          "09:30–11:00",
+          "Duna",
+          "Laboratorio Orsa",
+          "7",
+          "Da confermare"
+        ],
+        [
+          "Vento",
+          "Giovedì",
+          "14:00–15:30",
+          "Edera",
+          "Coordinamento Pino",
+          "5",
+          "Confermata"
+        ],
+        [
+          "Lumo",
+          "Venerdì",
+          "09:00–10:00",
+          "Sole",
+          "Ufficio Smeraldo",
+          "8",
+          "Confermata"
+        ],
+        [
+          "Nubi",
+          "Venerdì",
+          "11:00–12:00",
+          "Vela",
+          "Ufficio Quercia",
+          "6",
+          "Confermata"
+        ],
+        [
+          "Brina",
+          "Venerdì",
+          "13:00–14:00",
+          "Edera",
+          "Coordinamento Pino",
+          "5",
+          "Confermata"
+        ]
+      ],
+      "form": []
+    }
+  ]
+}
